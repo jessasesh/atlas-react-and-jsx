@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Section from "./components/Section";
+import HelpfulResource from "./components/HelpfulResource";
 
 function App() {
   return ( 
@@ -26,6 +27,21 @@ function App() {
         <li>Flexibility and Integration</li>
       </ul>
      </Section>
+
+     <Section title="Helpful resources">
+        <HelpfulResource
+          link="https://react.dev/learn"
+          label="React Learning Guide"
+        />
+        <HelpfulResource
+          link="https://www.freecodecamp.org/news/learn-react-2024/"
+          label="FreeCodeCamp - Learn React from Bob Ziroll"
+        />
+        <HelpfulResource
+          link="https://www.w3schools.com/REACT/"
+          label="W3 Schools React Tutorial"
+        />
+      </Section>
     </div>
   );
 }
